@@ -102,7 +102,7 @@ export class Login extends Component {
   }
 }
 
-const mapStateToProps = ({ authReducer }) => {
+const mapStateToProps = ({}) => {
   return {
 
   };

@@ -6,15 +6,38 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.0",
+    "bootstrap": "^4.3.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "node-sass": "^4.13.1",
+    "popper.js": "^1.16.0",
+    "prop-types": "^15.7.2",
     "react": "^16.13.0",
+    "react-date-picker": "^7.9.0",
     "react-dom": "^16.13.0",
-    "react-scripts": "3.4.0"
+    "react-redux": "^7.1.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.0",
+    "react-select": "^3.0.8",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint src --fix",
+    "pretty": "prettier --write \"src/**/*.js\""
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "prettier --write \"src/**/*.js\"",
+      "git add"
+    ]
   },
   "eslintConfig": {
     "extends": "react-app"
